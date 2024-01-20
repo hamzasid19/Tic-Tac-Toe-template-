@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <main>
+      <div class="action">
+        <i class="fa-regular fa-circle"></i>
+        <p>Player 1 is up</p>
+      </div>
+
+      <div class="menu" data-id="menu">
+        <button class="menu-btn">
+          Actions
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+
+        <div class="items border hidden" data-id="items">
+          <button data-id="resetBtn">Reset</button>
+          <button data-id="newBtn">New Round</button>
+        </div>
+      </div>
+      <div id="1" class="game-box shadow" data-id="square"></div>
+      <div id="2" class="game-box shadow" data-id="square"></div>
+      <div id="3" class="game-box shadow" data-id="square"></div>
+      <div id="4" class="game-box shadow" data-id="square"></div>
+      <div id="5" class="game-box shadow" data-id="square"></div>
+      <div id="6" class="game-box shadow" data-id="square"></div>
+      <div id="7" class="game-box shadow" data-id="square"></div>
+      <div id="8" class="game-box shadow" data-id="square"></div>
+      <div id="9" class="game-box shadow" data-id="square"></div>
+
+      <div class="result bg1 shadow">
+        <p>Player 1</p>
+        <span>0 Wins</span>
+      </div>
+      <div class="result bg2 shadow">
+        <p>Ties</p>
+        <span>0</span>
+      </div>
+      <div class="result bg3 shadow">
+        <p>Player 2</p>
+        <span>0 Wins</span>
+      </div>
+    </main>
+    <footer>
+      <p>Project Made by Hamza</p>
+      <p>Refactored by Hamza</p>
+    </footer>
+    <div class="modal hidden">
+      <div class="modal-content">
+        <p>Player 1 wins!</p>
+        <button>Play Again</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
